@@ -1,7 +1,7 @@
 class Solution {
     public int maxProfit(int[] prices) {
         int day_lowest = 0;
-        int profit1=0;
+        int profit1 = 0;
         int profit_prev = 0;
         int lowest = prices[0];
 
@@ -10,9 +10,6 @@ class Solution {
                 lowest = prices[i];
                 day_lowest = i + 1;
             }
-        }
-
-        for (int i = (day_lowest); i < prices.length; i++) {
             if (prices[i] > lowest) {
                 profit1 = prices[i] - lowest;
             }
@@ -21,6 +18,6 @@ class Solution {
             }
         }
         return profit_prev;
-    }
 
+    }
 }
