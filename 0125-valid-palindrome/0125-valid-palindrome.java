@@ -5,9 +5,5 @@ class Solution {
         for (int i = st.length() - 1; i >= 0; i--) {
             rev += st.charAt(i);
         }
-        if (st.equals(rev)) {
-            return true;
-        } else
-            return false;
-    }
+        return st.equals(rev);
 }
